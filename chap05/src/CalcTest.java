@@ -8,7 +8,7 @@ class Calc {
         return res;
     }
 
-    // 정적 메서드 : 원으 ㅣ둘레 계산
+    // 정적 메서드 : 원의 둘레 계산
     public static double circ (double rad){
         return 2 * PI * rad; // 직접 정적 변수 사용
     }
@@ -18,7 +18,7 @@ public class CalcTest{
     public static void main(String[] args) {
         Calc c = new Calc(); // Calc 인스턴스 생성
         double a = c.area(10); // 인스턴스 메서드 호출
-        double d = Calc.circ(10); // 정적 메서드 호출
+        double d = Calc.circ(20); // 정적 메서드 호출
 
         System.out.println("넓이 : " + a);
         System.out.println("둘레 : " + d);
